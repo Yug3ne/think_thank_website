@@ -24,7 +24,7 @@ const Home = () => {
             Welcome to The Mufasas – where innovative minds converge to tackle today’s pressing issues and pave the way for a brighter future. As a group of forward-thinking individuals, we dive into critical areas, from policy reform to cutting-edge technology, creating a platform for impactful discussions and transformative ideas.
           </p>
           <Link
-            to="/e-lab"
+            to="/challenges"
             className="bg-blue-600 px-3 py-3 rounded-lg text-lg text-center w-32 text-white font-semibold hover:bg-blue-500 transition duration-200"
           > E-Lab
           </Link>
@@ -35,23 +35,23 @@ const Home = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-primary-500 uppercase font-semibold tracking-wide mb-4">Meet the Team</h2>
-          <h3 className="text-4xl font-extrabold text-gray-100">The Mufasas</h3>
+          <h3 className="text-4xl font-extrabold text-gray-100">The Mufasa's</h3>
         </div>
 
         {/* Team Members Grid */}
         <div className="flex flex-wrap justify-center gap-6">
           {[
-            { name: "Kenzo Sano", imgSrc: "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw=" },
+            { name: "Kenzo Sano", imgSrc: "/MufasaAlu/Kenzo.jpg" },
             { name: "Frank Musiime", imgSrc: "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw=" },
-            { name: "Merveille Shekina", imgSrc: "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw=" },
-            { name: "Eugene Koech", imgSrc: "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw=" },
-            { name: "Duke Ndamage", imgSrc: "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw=" },
+            { name: "Merveille Shekina", imgSrc: "/MufasaAlu/Shekina.jpg" },
+            { name: "Eugene Koech", imgSrc: "/MufasaAlu/koech.jpg" },
+            { name: "Duke Ndamage", imgSrc: "MufasaAlu/duke.JPG" },
           ].map((member, index) => (
             <div key={index} className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="group relative bg-gray-100 rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
                 <img
                   alt={member.name}
-                  className="w-full h-48 object-cover group-hover:opacity-90"
+                  className="w-full h-96 object-cover group-hover:opacity-90"
                   src={member.imgSrc}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-transparent bg-opacity-75 text-center rounded-b-xl">
@@ -62,6 +62,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+      {/* problem and mission section */}
+          
     </div>
   );
 };

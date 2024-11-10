@@ -25,7 +25,9 @@ const Navbar = () => {
       {/* Normal sceen */}
       {/* logo */}
       <div>
-        <Link to="/">Mufasa</Link>
+        <Link to="/">
+          <img src="MufasaAlu/logo.PNG" alt="Logo" className="w-12 h-12 rounded-full"/>
+        </Link>
       </div>
       {/* middle */}
       <div className="flex items-center gap-4">
@@ -137,7 +139,10 @@ const Navbar = () => {
           <Link onClick={() => setOpen((prev) => !prev)} to="/gallery">
             Gallery
           </Link>
-          <button onClick={() => setShowContact(true)} className="flex gap-2 items-center">
+          <button
+            onClick={() => setShowContact(true)}
+            className="flex gap-2 items-center"
+          >
             <HiChatBubbleLeftRight size={28} className="text-[17px]" />
             Let's Talk
           </button>

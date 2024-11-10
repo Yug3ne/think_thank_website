@@ -12,8 +12,9 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Column 1: Logo and Social Links */}
           <div className="text-dark-body-color">
-            <div className="flex justify-center text-teal-300 sm:justify-start">
-              <img src="" className="w-[230px]" alt="Mufasa_Logo" />
+            <div className="flex justify-center text-black font-bold text-xl items-center gap-4 sm:justify-start">
+              <img src="/MufasaAlu/logo.PNG" className="w-12 rounded-full" alt="Mufasa_Logo" />
+              <span>Mufasa'S 2024</span>
             </div>
             <p className="max-w-md mx-auto mt-5 leading-snug text-sm text-center sm:max-w-xs sm:mx-0 sm:text-left">
               Driving Insight, Shaping Tomorrow's future for a better Africa.
